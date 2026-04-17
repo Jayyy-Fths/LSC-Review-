@@ -9,104 +9,106 @@
   <script src="script.js" defer></script>
 </head>
 <body>
+  <nav class="site-nav" aria-label="Primary">
+    <ul>
+      <li><a href="#intro">Intro</a></li>
+      <li><a href="#highlights-section">Highlights</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#rating">Rating</a></li>
+      <li><a href="#reflection">Reflection</a></li>
+    </ul>
+  </nav>
 
-<nav aria-label="Primary">
-  <ul>
-    <li><a href="#intro">Intro</a></li>
-    <li><a href="#highlights-section">Highlights</a></li>
-    <li><a href="#gallery">Gallery</a></li>
-    <li><a href="#rating">Rating</a></li>
-    <li><a href="#reflection">Reflection</a></li>
-  </ul>
-</nav>
+  <header class="hero">
+    <p class="eyebrow">Trip Review</p>
+    <h1>Liberty Science Center Trip</h1>
+    <p class="author">Justin Manley · <time datetime="2026-03-25">March 25, 2026</time></p>
+  </header>
 
-<header>
-  <h1>Liberty Science Center Trip</h1>
-  <p>Justin Manley</p>
-  <p><time datetime="2026-03-25">March 25, 2026</time></p>
-</header>
+  <main class="page">
+    <section id="intro" class="panel intro">
+      <h2>Introduction</h2>
+      <p>When we arrived to LSC, we went to go to the robotics area, and then we coded a little robot. After that we went to lunch, and got an overpriced meal. Then we went to the planetarium, and seem some cool planets and galaxies. We had some freetime after the planetarium, so we ended up walking around, seeing fishes, animals, and other things. Then that was the end of the trip, and we ended up being late getting back to the school.</p>
+      <p>When I was first going there, I was expecting to have a lot of fun, and being able to code. I was also hoping to be able to see the T.Rex exhibit as well as the planetarium.</p>
+    </section>
 
-<main>
-  <section id="intro">
-    <h2>Introduction</h2>
-    <p>When we arrived to LSC, we went to go to the robotics area, and then we coded a little robot. After that we went to lunch, and got an overpriced meal. Then we went to the planetarium, and seem some cool planets and galaxies. We had some freetime after the planetarium, so we ended up walking around, seeing fishes, animals, and other things. Then that was the end of the trip, and we ended up being late getting back to the school.</p>
-    <br><br>
-    <p>When I was first going there, I was expecting to have a lot of fun, and being able to code. I was also hoping to be able to see the T.Rex exhibit as well as the planetarium.</p>
-  </section>
+    <section id="highlights-section" class="panel">
+      <h2>Top 3 Highlights</h2>
+      <div class="highlights-container">
+        <article class="card">
+          <img src="img/Snapchat-634670356.jpg" alt="Students sitting together in the planetarium" loading="lazy">
+          <div class="card-body">
+            <h3>Highlight 1</h3>
+            <p>This was all of us inside the planetarium, and my favorite part of this trip was just being able to hang out as a class, and not having to do any actual work.</p>
+          </div>
+        </article>
 
-  <section id="highlights-section">
-    <h2>Top 3 Highlights</h2>
-    <div class="highlights-container">
-      <div class="card">
-        <img src="img/Snapchat-634670356.jpg" alt="Students sitting together in the planetarium" loading="lazy">
-        <h3>Highlight 1</h3>
-        <p>This was all of us inside the planetarium, and my favorite part of this trip was just being able to hang out as a class, and not having to do any actual work.</p>
+        <article class="card">
+          <img src="img/20260325_114306.jpg" alt="Planetarium dome projection showing space" loading="lazy">
+          <div class="card-body">
+            <h3>Highlight 2</h3>
+            <p>Going to the planetarium was really cool, being able to see different planets and the galaxies. I was interested in space since I was a kid so this was really nice to see.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/20260325_124902.jpg" alt="Skyline view from Liberty Science Center" loading="lazy">
+          <div class="card-body">
+            <h3>Highlight 3</h3>
+            <p>Seeing the skyline of the city through Liberty Science Center was awesome. I always liked the idea of the city, where anything can happen.</p>
+          </div>
+        </article>
       </div>
-      <div class="card">
-        <img src="img/20260325_114306.jpg" alt="Planetarium dome projection showing space" loading="lazy">
-        <h3>Highlight 2</h3>
-        <p>Going to the planetarium was really cool, being able to see different planets and the galaxies. I was interested in space since I was a kid so this was really nice to see.</p>
+    </section>
+
+    <section id="gallery" class="panel">
+      <h2>Photo Gallery</h2>
+      <div class="gallery">
+        <figure>
+          <img src="img/20260325_122425.jpg" alt="Galaxy visual in planetarium" loading="lazy">
+          <figcaption>Galaxy in Planetarium</figcaption>
+        </figure>
+        <figure>
+          <img src="img/20260325_122834.jpg" alt="Edge of the universe projection" loading="lazy">
+          <figcaption>Edge of the Universe</figcaption>
+        </figure>
+        <figure>
+          <img src="img/20260325_124027.jpg" alt="View of the Statue of Liberty from the center" loading="lazy">
+          <figcaption>Statue of Liberty</figcaption>
+        </figure>
+        <figure>
+          <img src="img/20260325_130024.jpg" alt="Monkey in an exhibit enclosure" loading="lazy">
+          <figcaption>Monkey in the Exhibit</figcaption>
+        </figure>
+        <figure>
+          <img src="img/20260325_130200.jpg" alt="Small rodent in an exhibit" loading="lazy">
+          <figcaption>Rodent in the Exhibit</figcaption>
+        </figure>
       </div>
-      <div class="card">
-        <img src="img/20260325_124902.jpg" alt="Skyline view from Liberty Science Center" loading="lazy">
-        <h3>Highlight 3</h3>
-        <p>Seeing the skyline of the city through Liberty Science Center was awesome. I always liked the idea of the city, where anything can happen.</p>
-      </div>
+    </section>
+
+    <div class="split-layout">
+      <section id="rating" class="panel">
+        <h2>Final Rating</h2>
+        <p class="score">⭐ 8/10</p>
+        <p>I thought that the experience was actually really nice, and that there were a lot of things to do there. The only complaint that I had was that the food and the things in the gift shop were extremely overpriced. But overall, it was a fun experience to do things with friends, especially the planetarium since we were all having fun in there too.</p>
+      </section>
+
+      <section id="reflection" class="panel">
+        <h2>Reflection</h2>
+        <p><strong>What did I learn?</strong></p>
+        <p>I learned how to code a sphero robot, and also learned more about the universe we live in.</p>
+        <p><strong>What surprised me?</strong></p>
+        <p>How much everything costed, since I was expecting it to be expensive, but not ten dollars for a magnet.</p>
+        <p><strong>Would I recommend this trip?</strong></p>
+        <p>I would definetly recommend this trip to someone else, since there were alot of things to see and do.</p>
+      </section>
     </div>
-  </section>
+  </main>
 
-  <section id="gallery">
-    <h2>Photo Gallery</h2>
-    <div class="gallery">
-      <figure>
-        <img src="img/20260325_122425.jpg" alt="Galaxy visual in planetarium" loading="lazy">
-        <figcaption>Galaxy in Planetarium</figcaption>
-      </figure>
-
-      <figure>
-        <img src="img/20260325_122834.jpg" alt="Edge of the universe projection" loading="lazy">
-        <figcaption>Edge of the Universe</figcaption>
-      </figure>
-
-      <figure>
-        <img src="img/20260325_124027.jpg" alt="View of the Statue of Liberty from the center" loading="lazy">
-        <figcaption>Statue of Liberty</figcaption>
-      </figure>
-
-      <figure>
-        <img src="img/20260325_130024.jpg" alt="Monkey in an exhibit enclosure" loading="lazy">
-        <figcaption>Monkey in the Exhibit</figcaption>
-      </figure>
-
-      <figure>
-        <img src="img/20260325_130200.jpg" alt="Small rodent in an exhibit" loading="lazy">
-        <figcaption>Rodent in the Exhibit</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <section id="rating">
-    <h2>Final Rating</h2>
-    <p>⭐ 8/10</p>
-    <p>I thought that the experience was actually really nice, and that there were a lot of things to do there. The only complaint that I had was that the food and the things in the gift shop were extremely overpriced. But overall, it was a fun experience to do things with friends, especially the planetarium since we were all having fun in there too.</p>
-  </section>
-
-  <section id="reflection">
-    <h2>Reflection</h2>
-    <p><strong>What did I learn?</strong></p>
-    <p>I learned how to code a sphero robot, and also learned more about the universe we live in.</p>
-    <p><strong>What surprised me?</strong></p>
-    <p>How much everything costed, since I was expecting it to be expensive, but not ten dollars for a magnet.</p>
-    <p><strong>Would I recommend this trip?</strong></p>
-    <p>I would definetly recommend this trip to someone else, since there were alot of things to see and do.</p>
-  </section>
-</main>
-
-<!-- IMAGE POPUP -->
-<div id="imageModal" class="modal" aria-hidden="true" role="dialog" aria-label="Expanded photo view">
-  <button class="close" type="button" aria-label="Close image modal">&times;</button>
-  <img class="modal-content" id="modalImg" alt="Expanded view">
-</div>
-
+  <div id="imageModal" class="modal" aria-hidden="true" role="dialog" aria-label="Expanded photo view">
+    <button class="close" type="button" aria-label="Close image modal">&times;</button>
+    <img class="modal-content" id="modalImg" alt="Expanded view">
+  </div>
 </body>
 </html>
