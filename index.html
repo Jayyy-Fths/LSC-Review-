@@ -1,6 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liberty Science Center Trip Review</title>
+  <meta
+    name="description"
+    content="Trip review page for Liberty Science Center with highlights, gallery, final rating, and reflection."
+  />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <p class="site-header__tag">Field Trip Review</p>
+      <h1>Liberty Science Center Trip</h1>
+      <p class="site-header__meta">
+        Jayden Azore • <time datetime="2026-03-25">March 25, 2026</time>
+      </p>
+    </div>
+  </header>
+
+  <nav class="site-nav" aria-label="Page sections">
+    <a href="#intro">Intro</a>
+    <a href="#highlights">Highlights</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#rating">Rating</a>
+    <a href="#reflection">Reflection</a>
+  </nav>
+
+  <main class="layout">
+    <section id="intro" class="card">
+      <h2>Introduction</h2>
+      <p>
+        At Liberty Science Center, we started in robotics and coded a small robot.
+        After lunch, we went to the planetarium and saw planets and galaxies.
+        Later, we explored exhibits with animals and other science displays before
+        heading back to school.
+      </p>
+      <p>
+        Before the trip, I expected to have fun, do some coding, and visit the
+        planetarium. The planetarium ended up being one of the best parts.
+      </p>
+    </section>
+
+    <section id="highlights" class="card">
+      <h2>Top 3 Highlights</h2>
+      <div class="highlights-grid">
+        <article class="highlight">
+          <img
+            src="img/Snapchat-634670356.jpg"
+            alt="Class in the planetarium"
+            loading="lazy"
+          />
+          <h3>Planetarium with Classmates</h3>
+          <p>
+            The best part was being together as a class in the planetarium and
+            enjoying the experience.
+          </p>
+        </article>
+
+        <article class="highlight">
+          <img
+            src="img/20260325_114306.jpg"
+            alt="Projection of planets and galaxies"
+            loading="lazy"
+          />
+          <h3>Space Visuals</h3>
+          <p>
+            Seeing the planets and galaxy visuals was exciting because I have
+            always been interested in space.
+          </p>
+        </article>
+
+        <article class="highlight">
+          <img
+            src="img/20260325_124902.jpg"
+            alt="View of the city skyline from the center"
+            loading="lazy"
+          />
+          <h3>Skyline View</h3>
+          <p>
+            The skyline view from Liberty Science Center was one of my favorite
+            moments to photograph.
+          </p>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LSC Trip Experience | Student Review</title>
@@ -87,6 +171,27 @@
     </section>
 
     <section id="gallery" class="card">
+      <h2>Photo Gallery</h2>
+      <div class="gallery-grid">
+        <figure>
+          <img src="img/20260325_122425.jpg" alt="Galaxy visual" loading="lazy" />
+          <figcaption>Galaxy in Planetarium</figcaption>
+        </figure>
+        <figure>
+          <img src="img/20260325_122834.jpg" alt="Edge of universe scene" loading="lazy" />
+          <figcaption>Edge of the Universe</figcaption>
+        </figure>
+        <figure>
+          <img src="img/20260325_124027.jpg" alt="Statue of Liberty view" loading="lazy" />
+          <figcaption>Statue of Liberty</figcaption>
+        </figure>
+        <figure>
+          <img src="img/20260325_130024.jpg" alt="Monkey exhibit" loading="lazy" />
+          <figcaption>Monkey in the Exhibit</figcaption>
+        </figure>
+        <figure>
+          <img src="img/20260325_130200.jpg" alt="Rodent exhibit" loading="lazy" />
+          <figcaption>Rodent in the Exhibit</figcaption>
       <div class="section-head">
         <h2>Gallery</h2>
         <p>Click any photo to open a larger view.</p>
@@ -115,6 +220,29 @@
       </div>
     </section>
 
+    <section id="rating" class="card">
+      <h2>Final Rating</h2>
+      <p class="score">⭐ 8/10</p>
+      <p>
+        The trip had a lot to do and was fun overall. The only downside was that
+        food and gift shop prices felt expensive.
+      </p>
+    </section>
+
+    <section id="reflection" class="card">
+      <h2>Reflection</h2>
+      <p><strong>What did I learn?</strong></p>
+      <p>I learned how to code a sphero robot and learned more about space.</p>
+      <p><strong>What surprised me?</strong></p>
+      <p>I was surprised by how expensive some items were.</p>
+      <p><strong>Would I recommend this trip?</strong></p>
+      <p>Yes. There were lots of activities and exhibits to explore.</p>
+    </section>
+  </main>
+
+  <div id="imageModal" class="modal" aria-hidden="true" role="dialog" aria-label="Expanded image">
+    <button id="closeModal" type="button" class="modal-close" aria-label="Close image">×</button>
+    <img id="modalImage" class="modal-image" src="" alt="Expanded gallery image" />
     <section id="review" class="review-grid">
       <article class="card">
         <h2>Final Score</h2>

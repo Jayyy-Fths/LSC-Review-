@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #eef5ff;
+  --card: #ffffff;
+  --text: #1a2b3f;
+  --muted: #4f657b;
+  --primary: #0f4c81;
+  --secondary: #00a8cc;
+  --border: #d6e4f3;
+  --shadow: 0 10px 24px rgba(20, 45, 75, 0.12);
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 :root {
@@ -19,12 +30,84 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 70px;
   scroll-padding-top: 88px;
 }
 
 body {
   margin: 0;
   font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: var(--text);
+  background: linear-gradient(to bottom, var(--bg), #ffffff 35%);
+}
+
+.site-header {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #fff;
+  padding: 68px 16px 56px;
+}
+
+.site-header__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.site-header__tag {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 1.3px;
+  opacity: 0.9;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.site-header__meta {
+  margin: 10px 0 0;
+  opacity: 0.95;
+}
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding: 12px 16px;
+  background: rgba(13, 58, 97, 0.92);
+  backdrop-filter: blur(8px);
+}
+
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.layout {
+  max-width: 1100px;
+  margin: -24px auto 48px;
+  padding: 0 16px;
+  display: grid;
+  gap: 18px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 22px;
+}
+
+h2 {
+  margin: 0 0 12px;
+  color: var(--primary);
   background:
     radial-gradient(1000px 500px at 10% -5%, #233a63 0%, transparent 70%),
     radial-gradient(900px 450px at 90% 0%, #31295f 0%, transparent 70%),
@@ -160,6 +243,24 @@ h3 {
 p {
   margin: 0;
   color: var(--muted);
+  line-height: 1.55;
+}
+
+p + p {
+  margin-top: 10px;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.highlight {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f7fbff;
 }
 
 .section-head {
@@ -202,6 +303,54 @@ p {
 
 .highlight img {
   width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+  cursor: zoom-in;
+}
+
+.highlight h3 {
+  margin: 10px 12px 6px;
+  color: var(--primary);
+}
+
+.highlight p {
+  margin: 0 12px 12px;
+  font-size: 0.94rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 12px;
+}
+
+.gallery-grid figure {
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f7fbff;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+  cursor: zoom-in;
+}
+
+figcaption {
+  padding: 10px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.score {
+  font-size: 2rem;
+  color: #123c6b;
+  margin-bottom: 8px;
   height: 190px;
   object-fit: cover;
 }
@@ -275,6 +424,21 @@ figcaption {
 .modal {
   position: fixed;
   inset: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 52px 14px 14px;
+}
+
+.modal.open {
+  display: block;
+}
+
+.modal-image {
+  display: block;
+  max-width: min(95vw, 1000px);
+  max-height: 86vh;
+  margin: 0 auto;
+  border-radius: 10px;
   display: none;
   z-index: 2000;
   background: rgba(0, 0, 0, 0.82);
@@ -307,6 +471,13 @@ figcaption {
   right: 14px;
   top: 10px;
   border: 0;
+  border-radius: 999px;
+  width: 40px;
+  height: 40px;
+  font-size: 1.8rem;
+  line-height: 1;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
   width: 40px;
   height: 40px;
   border-radius: 999px;
@@ -317,6 +488,19 @@ figcaption {
   color: #fff;
 }
 
+@media (max-width: 860px) {
+  .highlights-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 16px;
 .modal-close:hover,
 .modal-close:focus-visible {
   background: rgba(255, 255, 255, 0.3);
