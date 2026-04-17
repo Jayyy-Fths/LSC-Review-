@@ -3,100 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Liberty Science Center Review</title>
-  <meta name="description" content="A Liberty Science Center field trip review with highlights, gallery photos, rating, and reflection.">
+  <title>LSC Trip Experience | Student Review</title>
+  <meta name="description" content="An interactive student review of a Liberty Science Center trip, including highlights, gallery, and reflection.">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <nav class="nav" aria-label="Primary">
-    <a href="#intro">Intro</a>
-    <a href="#highlights">Highlights</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#rating">Rating</a>
-    <a href="#reflection">Reflection</a>
-  </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="hero">
-    <h1>Liberty Science Center Trip</h1>
-    <p>Justin Manley · <time datetime="2026-03-25">March 25, 2026</time></p>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <p class="brand">Liberty Science Center</p>
+      <nav aria-label="Section navigation">
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#highlights">Highlights</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#review">Review</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main class="container">
-    <section id="intro" class="panel">
-      <h2>Introduction</h2>
-      <p>When we arrived to LSC, we started in the robotics area and coded a small robot. After that we had lunch, then we went to the planetarium and saw planets and galaxies. We had some free time after that, so we explored and saw fish, animals, and other exhibits before heading back to school.</p>
-      <p>Before the trip, I expected to have fun and do some coding. I was also hoping to see the T-Rex exhibit and visit the planetarium.</p>
+  <main id="main">
+    <section id="overview" class="hero card">
+      <p class="eyebrow">Field Trip Review</p>
+      <h1>A Day at Liberty Science Center</h1>
+      <p class="meta">By Justin Manley · <time datetime="2026-03-25">March 25, 2026</time></p>
+      <p class="lede">This page captures what we did, what stood out, and how the trip felt overall—from robotics and space visuals to the final reflection.</p>
     </section>
 
-    <section id="highlights" class="panel">
-      <h2>Top 3 Highlights</h2>
-      <div class="cards">
-        <article class="card">
-          <img src="img/Snapchat-634670356.jpg" alt="Class inside the planetarium" loading="lazy">
-          <h3>Planetarium with Friends</h3>
-          <p>My favorite part was getting to hang out with everyone in the planetarium.</p>
-        </article>
+    <section id="timeline" class="card">
+      <h2>Trip Timeline</h2>
+      <ol class="timeline">
+        <li>
+          <h3>Robotics Lab</h3>
+          <p>We started in robotics and got to code a small robot, which was the most hands-on part of the day.</p>
+        </li>
+        <li>
+          <h3>Lunch Break</h3>
+          <p>Food options were available, but prices felt high for what was offered.</p>
+        </li>
+        <li>
+          <h3>Planetarium Session</h3>
+          <p>The planetarium visuals of planets and galaxies were one of the coolest experiences on the trip.</p>
+        </li>
+        <li>
+          <h3>Free Explore Time</h3>
+          <p>We walked through exhibits and saw different animals and displays before heading back.</p>
+        </li>
+      </ol>
+    </section>
 
-        <article class="card">
+    <section id="highlights" class="card">
+      <div class="section-head">
+        <h2>Top Highlights</h2>
+        <p>Three moments that made the trip memorable.</p>
+      </div>
+      <div class="highlights-grid">
+        <article class="highlight">
+          <img src="img/Snapchat-634670356.jpg" alt="Classmates inside the planetarium" loading="lazy">
+          <div>
+            <h3>Planetarium Atmosphere</h3>
+            <p>Hanging out together in the planetarium made the trip feel different from a normal school day.</p>
+          </div>
+        </article>
+        <article class="highlight">
           <img src="img/20260325_114306.jpg" alt="Planetarium projection of space" loading="lazy">
-          <h3>Space Visuals</h3>
-          <p>Seeing the planets and galaxies was really cool and matched my interest in space.</p>
+          <div>
+            <h3>Space Visuals</h3>
+            <p>The projected journey through planets and galaxies was impressive and matched my interest in space.</p>
+          </div>
         </article>
-
-        <article class="card">
+        <article class="highlight">
           <img src="img/20260325_124902.jpg" alt="Skyline view from Liberty Science Center" loading="lazy">
-          <h3>Skyline View</h3>
-          <p>The view of the city skyline from the center was one of my favorite photo moments.</p>
+          <div>
+            <h3>City View</h3>
+            <p>Seeing the skyline from the center was a great visual break and one of my favorite photo moments.</p>
+          </div>
         </article>
       </div>
     </section>
 
-    <section id="gallery" class="panel">
-      <h2>Photo Gallery</h2>
-      <div class="gallery">
+    <section id="gallery" class="card">
+      <div class="section-head">
+        <h2>Gallery</h2>
+        <p>Click any photo to open a larger view.</p>
+      </div>
+      <div class="photo-grid">
         <figure>
-          <img src="img/20260325_122425.jpg" alt="Galaxy in planetarium" loading="lazy">
+          <img src="img/20260325_122425.jpg" alt="Galaxy view in the planetarium" loading="lazy">
           <figcaption>Galaxy in Planetarium</figcaption>
         </figure>
         <figure>
-          <img src="img/20260325_122834.jpg" alt="Edge of the universe scene" loading="lazy">
+          <img src="img/20260325_122834.jpg" alt="Edge of the universe visual" loading="lazy">
           <figcaption>Edge of the Universe</figcaption>
         </figure>
         <figure>
-          <img src="img/20260325_124027.jpg" alt="Statue of Liberty view" loading="lazy">
+          <img src="img/20260325_124027.jpg" alt="Statue of Liberty from observation area" loading="lazy">
           <figcaption>Statue of Liberty</figcaption>
         </figure>
         <figure>
-          <img src="img/20260325_130024.jpg" alt="Monkey in exhibit" loading="lazy">
-          <figcaption>Monkey in the Exhibit</figcaption>
+          <img src="img/20260325_130024.jpg" alt="Monkey at an exhibit enclosure" loading="lazy">
+          <figcaption>Monkey Exhibit</figcaption>
         </figure>
         <figure>
-          <img src="img/20260325_130200.jpg" alt="Rodent in exhibit" loading="lazy">
-          <figcaption>Rodent in the Exhibit</figcaption>
+          <img src="img/20260325_130200.jpg" alt="Small rodent in a habitat display" loading="lazy">
+          <figcaption>Rodent Exhibit</figcaption>
         </figure>
       </div>
     </section>
 
-    <div class="split">
-      <section id="rating" class="panel">
-        <h2>Final Rating</h2>
-        <p class="score">⭐ 8/10</p>
-        <p>I thought the experience was really good and had lots to do. My only complaint was that food and gift shop items were overpriced.</p>
-      </section>
+    <section id="review" class="review-grid">
+      <article class="card">
+        <h2>Final Score</h2>
+        <p class="rating">8<span>/10</span></p>
+        <p>The trip had a lot to do and a strong mix of technology, science visuals, and social time. The only downside was the cost of food and gift-shop items.</p>
+      </article>
 
-      <section id="reflection" class="panel">
+      <article class="card">
         <h2>Reflection</h2>
-        <p><strong>What did I learn?</strong><br>I learned how to code a sphero robot and learned more about the universe.</p>
-        <p><strong>What surprised me?</strong><br>How expensive everything was compared to what I expected.</p>
-        <p><strong>Would I recommend this trip?</strong><br>Yes, because there were a lot of exhibits and activities.</p>
-      </section>
-    </div>
+        <ul class="qa-list">
+          <li>
+            <h3>What did I learn?</h3>
+            <p>I learned how to code a sphero robot and understood more about space and the universe.</p>
+          </li>
+          <li>
+            <h3>What surprised me?</h3>
+            <p>How expensive things were compared with what I expected before the trip.</p>
+          </li>
+          <li>
+            <h3>Would I recommend this trip?</h3>
+            <p>Yes. There were many exhibits to explore, and it was a good experience with classmates.</p>
+          </li>
+        </ul>
+      </article>
+    </section>
   </main>
 
-  <div id="imageModal" class="modal" aria-hidden="true" role="dialog" aria-label="Expanded image view">
-    <button id="modalClose" class="close" type="button" aria-label="Close image">×</button>
-    <img id="modalImage" class="modal-image" src="" alt="Expanded image">
+  <div id="imageModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Expanded image viewer">
+    <button id="modalClose" class="modal-close" type="button" aria-label="Close image viewer">×</button>
+    <img id="modalImage" class="modal-image" src="" alt="Expanded photo">
+    <p id="modalCaption" class="modal-caption"></p>
   </div>
 </body>
 </html>
