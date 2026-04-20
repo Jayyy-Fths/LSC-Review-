@@ -47,6 +47,24 @@
 
     <section id="highlights" class="card">
       <h2>Top 3 Highlights</h2>
+      <p class="helper">Click images to open them full-size.</p>
+      <div class="highlights-grid">
+        <article class="highlight">
+          <a class="img-link" href="img/Snapchat-634670356.jpg" target="_blank" rel="noopener noreferrer"><img src="img/Snapchat-634670356.jpg" alt="Class in the planetarium" loading="lazy" /></a>
+          <h3>Planetarium with Classmates</h3>
+          <p>The best part was being together as a class in the planetarium and enjoying the experience.</p>
+        </article>
+
+        <article class="highlight">
+          <a class="img-link" href="img/20260325_114306.jpg" target="_blank" rel="noopener noreferrer"><img src="img/20260325_114306.jpg" alt="Projection of planets and galaxies" loading="lazy" /></a>
+          <h3>Space Visuals</h3>
+          <p>Seeing the planets and galaxy visuals was exciting because I have always been interested in space.</p>
+        </article>
+
+        <article class="highlight">
+          <a class="img-link" href="img/20260325_124902.jpg" target="_blank" rel="noopener noreferrer"><img src="img/20260325_124902.jpg" alt="View of the city skyline from the center" loading="lazy" /></a>
+          <h3>Skyline View</h3>
+          <p>The skyline view from Liberty Science Center was one of my favorite moments to photograph.</p>
       <div class="highlights-grid">
         <article class="highlight">
           <img
@@ -174,6 +192,24 @@
       <h2>Photo Gallery</h2>
       <div class="gallery-grid">
         <figure>
+          <a class="img-link" href="img/20260325_122425.jpg" target="_blank" rel="noopener noreferrer"><img src="img/20260325_122425.jpg" alt="Galaxy visual" loading="lazy" /></a>
+          <figcaption>Galaxy in Planetarium</figcaption>
+        </figure>
+        <figure>
+          <a class="img-link" href="img/20260325_122834.jpg" target="_blank" rel="noopener noreferrer"><img src="img/20260325_122834.jpg" alt="Edge of universe scene" loading="lazy" /></a>
+          <figcaption>Edge of the Universe</figcaption>
+        </figure>
+        <figure>
+          <a class="img-link" href="img/20260325_124027.jpg" target="_blank" rel="noopener noreferrer"><img src="img/20260325_124027.jpg" alt="Statue of Liberty view" loading="lazy" /></a>
+          <figcaption>Statue of Liberty</figcaption>
+        </figure>
+        <figure>
+          <a class="img-link" href="img/20260325_130024.jpg" target="_blank" rel="noopener noreferrer"><img src="img/20260325_130024.jpg" alt="Monkey exhibit" loading="lazy" /></a>
+          <figcaption>Monkey in the Exhibit</figcaption>
+        </figure>
+        <figure>
+          <a class="img-link" href="img/20260325_130200.jpg" target="_blank" rel="noopener noreferrer"><img src="img/20260325_130200.jpg" alt="Rodent exhibit" loading="lazy" /></a>
+          <figcaption>Rodent in the Exhibit</figcaption>
           <img src="img/20260325_122425.jpg" alt="Galaxy visual" loading="lazy" />
           <figcaption>Galaxy in Planetarium</figcaption>
         </figure>
@@ -240,6 +276,13 @@
     </section>
   </main>
 
+  <div id="modal" class="modal" hidden aria-hidden="true" role="dialog" aria-label="Expanded photo">
+    <button id="modalClose" class="modal-close" type="button" aria-label="Close image">×</button>
+    <img id="modalImage" class="modal-image" src="" alt="Expanded photo" />
+    <p id="modalCaption" class="modal-caption"></p>
+    <p id="modalFallback" class="modal-fallback" hidden>
+      Could not load full image. <a id="modalLink" href="#" target="_blank" rel="noopener noreferrer">Open image in a new tab</a>.
+    </p>
   <div id="imageModal" class="modal" aria-hidden="true" role="dialog" aria-label="Expanded image">
     <button id="closeModal" type="button" class="modal-close" aria-label="Close image">×</button>
     <img id="modalImage" class="modal-image" src="" alt="Expanded gallery image" />
